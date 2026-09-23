@@ -48,16 +48,8 @@ export function LeadForm() {
 
       <div className="field-row">
         <label>
-          <span>Segmento</span>
-          <select name="segment" value={form.segment} onChange={updateField} required>
-            <option value="">Selecione</option>
-            <option>Restaurante / Alimentação</option>
-            <option>Advocacia</option>
-            <option>Imobiliária</option>
-            <option>Comércio / Varejo</option>
-            <option>Serviços</option>
-            <option>Outro</option>
-          </select>
+          <span>Área de atuação</span>
+          <input name="segment" value={form.segment} onChange={updateField} placeholder="Em que área sua empresa atua?" required />
         </label>
         <label>
           <span>Solução de interesse</span>

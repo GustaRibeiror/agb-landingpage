@@ -24,7 +24,7 @@ export function buildLeadMessage({ name, company, segment, service, moment }) {
     '',
     `Nome: ${name}`,
     `Negócio: ${company}`,
-    `Segmento: ${segment}`,
+    `Área de atuação: ${segment}`,
     `Interesse: ${service}`,
     `Momento: ${moment}`,
     '',

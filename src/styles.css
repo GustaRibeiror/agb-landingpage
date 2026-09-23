@@ -1410,6 +1410,11 @@ h1 em {
   transition: transform .7s var(--ease);
 }
 
+.founder-art img.founder-portrait-close {
+  object-position: center 30%;
+  transform: scale(1.14);
+}
+
 .founder-card:hover {
   border-color: rgba(224, 164, 91, .48);
   transform: translateY(-4px);
@@ -1417,6 +1422,10 @@ h1 em {
 
 .founder-card:hover img {
   transform: scale(1.02);
+}
+
+.founder-card:hover img.founder-portrait-close {
+  transform: scale(1.17);
 }
 
 .founder-copy {

@@ -159,7 +159,8 @@ export const founders = [
     name: 'Augusto Morais',
     role: 'Branding, conteúdo & performance',
     bio: 'Cuida do posicionamento, conteúdo e performance para fortalecer a presença da marca.',
-    image: '/assets/optimized/augusto-morais-portrait.webp',
+    image: '/assets/optimized/augusto-morais-portrait-v2.webp',
+    imageClass: 'founder-portrait-close',
   },
 ]
 

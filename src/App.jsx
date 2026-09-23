@@ -44,10 +44,10 @@ function App() {
                 <a className="button button-gold" href={directWhatsAppUrl} target="_blank" rel="noreferrer">Quero fortalecer meu negócio <span aria-hidden="true">↗</span></a>
                 <a className="button button-ghost" href="#portfolio">Ver projetos <span aria-hidden="true">↓</span></a>
               </div>
-              <div className="hero-audiences hero-enter hero-delay-3" aria-label="Principais segmentos atendidos">
-                <span>Restaurantes</span>
-                <span>Advocacia</span>
-                <span>Imobiliárias</span>
+              <div className="hero-audiences hero-enter hero-delay-3" aria-label="Benefícios para o seu negócio">
+                <span>Mais presença</span>
+                <span>Mais oportunidades</span>
+                <span>Mais crescimento</span>
               </div>
             </div>
             <div className="hero-visual hero-enter hero-delay-2">
@@ -89,7 +89,7 @@ function App() {
             <div className="founders-grid">
               {founders.map((founder) => (
                 <article className="founder-card reveal" key={founder.name}>
-                  <div className="founder-art"><img src={founder.image} alt={`Retrato em preto e branco de ${founder.name}`} loading="lazy" decoding="async" width="720" height="900" /></div>
+                  <div className="founder-art"><img className={founder.imageClass} src={founder.image} alt={`Retrato em preto e branco de ${founder.name}`} loading="lazy" decoding="async" width="720" height="900" /></div>
                   <div className="founder-copy">
                     <p className="founder-role">{founder.role}</p>
                     <h3>{founder.name}</h3>
