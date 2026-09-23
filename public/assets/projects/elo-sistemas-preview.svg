@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="40" x2="1100" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17234b"/>
+      <stop offset=".62" stop-color="#2449a7"/>
+      <stop offset="1" stop-color="#163676"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="810" y1="120" x2="1120" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4e72d5" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#4e72d5" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0v42" stroke="#fff" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v630H0z"/>
+  <path fill="url(#glow)" d="M720 0h480v630H720z"/>
+  <path fill="url(#grid)" d="M0 0h1200v630H0z"/>
+  <rect x="46" y="38" width="42" height="42" rx="10" fill="#f1a90b"/>
+  <path d="M58 60h18M67 51v18m-6-12 6-6 6 6" stroke="#17234b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="101" y="67" fill="#f8f8ff" font-family="Arial,sans-serif" font-size="26" font-weight="600">Elo <tspan fill="#f1a90b">Sistemas</tspan></text>
+  <rect x="48" y="204" width="36" height="2" fill="#f1a90b"/>
+  <text x="96" y="212" fill="#f5c94e" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="4">TECNOLOGIA COM PROPÓSITO</text>
+  <text x="48" y="278" fill="#f8f8ff" font-family="Arial,sans-serif" font-size="43" font-weight="700">A Base Tecnológica para</text>
+  <text x="48" y="330" fill="#f8f8ff" font-family="Arial,sans-serif" font-size="43" font-weight="700">Organizações que Buscam</text>
+  <text x="48" y="382" fill="#f1a90b" font-family="Arial,sans-serif" font-size="43" font-weight="700">Crescimento</text>
+  <text x="365" y="382" fill="#f8f8ff" font-family="Arial,sans-serif" font-size="43" font-weight="700">e</text>
+  <text x="397" y="382" fill="#91b3ff" font-family="Arial,sans-serif" font-size="43" font-weight="700">Controle</text>
+  <text x="50" y="431" fill="#d1d8eb" font-family="Arial,sans-serif" font-size="18">Transformamos complexidade tecnológica em processos simples e seguros.</text>
+  <rect x="48" y="466" width="256" height="54" rx="10" fill="#39b94a"/>
+  <text x="78" y="500" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">Fale com nosso time no WhatsApp</text>
+  <rect x="48" y="557" width="1104" height="1" fill="#fff" fill-opacity=".12"/>
+</svg>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export function Header({ onWhatsapp }) {
+export function Header() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -38,10 +38,6 @@ export function Header({ onWhatsapp }) {
           <a href="#portfolio" onClick={closeMenu}>Projetos</a>
           <a href="#sobre" onClick={closeMenu}>Sobre</a>
           <a href="#contato" onClick={closeMenu}>Contato</a>
-          <button className="nav-cta" type="button" onClick={() => { closeMenu(); onWhatsapp() }}>
-            Falar com a AGB
-            <span aria-hidden="true">↗</span>
-          </button>
         </nav>
       </div>
     </header>

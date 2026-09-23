@@ -9,10 +9,9 @@ const initialForm = {
   moment: '',
 }
 
-export function LeadForm({ selectedService = '' }) {
+export function LeadForm() {
   const [form, setForm] = useState(initialForm)
   const [status, setStatus] = useState('')
-  const shownService = form.service || selectedService
 
   function updateField(event) {
     const { name, value } = event.target
@@ -22,7 +21,7 @@ export function LeadForm({ selectedService = '' }) {
 
   function handleSubmit(event) {
     event.preventDefault()
-    const payload = { ...form, service: shownService }
+    const payload = form
 
     if (!Object.values(payload).every(Boolean)) {
       setStatus('Preencha todos os campos para continuar.')
@@ -30,11 +29,6 @@ export function LeadForm({ selectedService = '' }) {
     }
 
     const url = buildWhatsAppUrl(buildLeadMessage(payload))
-    if (!url) {
-      setStatus('O número do WhatsApp ainda não foi configurado. Adicione VITE_WHATSAPP_NUMBER no arquivo .env.')
-      return
-    }
-
     window.open(url, '_blank', 'noopener,noreferrer')
     setStatus('Tudo certo. Abrimos o WhatsApp com sua mensagem pronta.')
   }
@@ -67,7 +61,7 @@ export function LeadForm({ selectedService = '' }) {
         </label>
         <label>
           <span>Solução de interesse</span>
-          <select name="service" value={shownService} onChange={updateField} required>
+          <select name="service" value={form.service} onChange={updateField} required>
             <option value="">Selecione</option>
             <option>Cardápio Digital</option>
             <option>Landing Page / Site</option>

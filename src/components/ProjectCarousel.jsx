@@ -25,10 +25,8 @@ export function ProjectCarousel({ projects }) {
       <div className="projects-track" ref={trackRef} tabIndex="0" aria-label="Projetos já desenvolvidos">
         {projects.map((project, index) => (
           <a className="project-card" href={project.url} target="_blank" rel="noreferrer" key={project.title}>
-            <div
-              className="project-image"
-              style={{ backgroundImage: `linear-gradient(180deg, transparent 30%, rgba(2,12,24,.58)), url("${project.image}")` }}
-            >
+            <div className="project-image">
+              <img src={project.image} alt="" loading="lazy" decoding="async" />
               <span>0{index + 1}</span>
             </div>
             <div className="project-info">

@@ -2,6 +2,15 @@ export const services = [
   {
     number: '01',
     title: 'Cardápio Digital',
+    visual: {
+      type: 'menu-showcase',
+      screens: [
+        '/assets/services/cardapio-inicio.webp',
+        '/assets/services/cardapio-itens.webp',
+        '/assets/services/cardapio-categorias.webp',
+      ],
+      alt: 'Três telas de celular com capturas do cardápio digital: página inicial, lista de pratos e categorias',
+    },
     price: 'R$ 297',
     cadence: '+ R$ 39,90/mês',
     tagline: 'O cardápio que se atualiza sozinho, sem gráfica e sem gastar papel.',
@@ -20,6 +29,7 @@ export const services = [
   {
     number: '02',
     title: 'Landing Page / Site',
+    visual: { type: 'showcase' },
     price: 'R$ 497',
     cadence: 'por projeto',
     tagline: 'Uma página feita para vender, não só para existir.',
@@ -38,6 +48,11 @@ export const services = [
   {
     number: '03',
     title: 'Tráfego Pago',
+    visual: {
+      src: '/assets/optimized/trafego-pago-bg-162430.png',
+      alt: 'Notebook com interface conceitual da Meta e gráfico ilustrativo em tendência de alta, sem métricas reais',
+      background: '#162430',
+    },
     price: 'R$ 297',
     cadence: 'gestão de campanha',
     tagline: 'Anúncio que traz cliente, não só curtida.',
@@ -56,8 +71,9 @@ export const services = [
   {
     number: '04',
     title: 'Produção de Conteúdo',
+    visual: { src: '/assets/optimized/producao-conteudo-3d.webp', alt: 'Estúdio criativo 3D com câmera, celular, microfone, iluminação, roteiro e edição de vídeo' },
     price: 'R$ 397',
-    cadence: 'a partir de',
+    cadence: 'valor inicial',
     tagline: 'Conteúdo para reter atenção e virar cliente.',
     description:
       'Roteiro, gravação e edição com uma direção clara: prender a atenção e criar um motivo para entrar em contato.',
@@ -73,8 +89,13 @@ export const services = [
   {
     number: '05',
     title: 'Gestão de Redes Sociais',
+    visual: {
+      src: '/assets/services/redes-social-bg-162430.png',
+      alt: 'Composição de três celulares com interfaces de criação, métricas e planejamento de redes sociais',
+      background: '#162430',
+    },
     price: 'R$ 297',
-    cadence: 'a partir de',
+    cadence: 'valor inicial',
     tagline: 'Perfil ativo, sem tomar o seu tempo.',
     description:
       'Planejamento, publicação e relacionamento para manter a marca presente e responder no ritmo do cliente.',
@@ -96,50 +117,49 @@ export const projects = [
     category: 'Advocacia · Site institucional',
     description: 'Presença sóbria e estratégica para comunicar confiança, especialidade e proximidade.',
     url: 'https://castrobezerraadv.com/',
-    image:
-      'https://castrobezerraadv.com/wp-content/uploads/2025/04/Photo-by-KATRIN-BOLOVTSOVA-httpswww.pexels.comphotoa-golden-balance-scale-beside-a-laptop-6077797-scaled.jpg',
+    image: '/assets/optimized/castro.webp',
   },
   {
     title: 'Sistema FGD',
     category: 'Tecnologia fiscal · Landing page',
     description: 'Uma apresentação direta para simplificar um produto técnico e destacar velocidade e praticidade.',
     url: 'https://fergaadsistemas.com.br/',
-    image: 'https://fergaadsistemas.com.br/wp-content/uploads/2025/07/pexels-pixabay-416320-scaled.jpg',
+    image: '/assets/optimized/fgd.webp',
   },
   {
     title: 'JR Papelaria Criativa',
     category: 'Varejo · E-commerce',
     description: 'Uma vitrine digital leve e visual para transformar descoberta em experiência de compra.',
     url: 'https://jrpapelariacriativa.lojavirtualnuvem.com.br/',
-    image:
-      'https://dcdn-us.mitiendanube.com/stores/008/013/051/themes/toluca/2-img-460559505067535076-1785597009-a3a0154ada54488d999118ef94e952001785597009-1920-1920.webp',
+    image: '/assets/optimized/jr.webp',
+  },
+  {
+    title: 'Elo Sistemas',
+    category: 'Tecnologia institucional · Landing page',
+    description: 'Uma apresentação direta para soluções de gestão, com foco em clareza, confiança e crescimento.',
+    url: 'https://elo.zelosistema.com.br/',
+    image: '/assets/projects/elo-sistemas-preview.svg',
   },
 ]
 
 export const founders = [
   {
-    name: 'Gustavo Ribeiro',
-    role: 'Tecnologia & desenvolvimento',
-    bio: 'Desenvolvedor de software que transforma necessidades de negócio em soluções digitais eficientes, escaláveis e fáceis de usar.',
-    detail: 'Na AGB, lidera tecnologia, automações e o desenvolvimento de produtos personalizados.',
-    specialties: ['Software', 'Automações', 'IA'],
-    image: '/assets/gustavo-ribeiro-portrait.png',
-  },
-  {
     name: 'Bruno Silveira',
     role: 'Comercial, QA & validação',
-    bio: 'Especialista em qualidade e validação, conecta as necessidades do cliente à entrega de produtos confiáveis e bem executados.',
-    detail: 'Na AGB, atua entre comercial, QA e evolução contínua das soluções.',
-    specialties: ['Qualidade', 'Validação', 'Comercial'],
-    image: '/assets/bruno-silveira-portrait.png',
+    bio: 'Garante qualidade e conecta cada solução às necessidades reais do cliente.',
+    image: '/assets/optimized/bruno-silveira-portrait.webp',
+  },
+  {
+    name: 'Gustavo Ribeiro',
+    role: 'Tecnologia & desenvolvimento',
+    bio: 'Transforma desafios de negócio em software, automações e produtos digitais.',
+    image: '/assets/optimized/gustavo-ribeiro-portrait.webp',
   },
   {
     name: 'Augusto Morais',
     role: 'Branding, conteúdo & performance',
-    bio: 'Diretor criativo focado em posicionamento, conteúdo e performance para transformar atenção em autoridade de marca.',
-    detail: 'Na AGB, conduz branding, marketing e presença estratégica nas redes sociais.',
-    specialties: ['Branding', 'Conteúdo', 'Performance'],
-    image: '/assets/augusto-morais-portrait.png',
+    bio: 'Cuida do posicionamento, conteúdo e performance para fortalecer a presença da marca.',
+    image: '/assets/optimized/augusto-morais-portrait.webp',
   },
 ]
 
