@@ -53,7 +53,7 @@ export const services = [
       alt: 'Notebook com interface conceitual da Meta e gráfico ilustrativo em tendência de alta, sem métricas reais',
       background: '#162430',
     },
-    price: 'R$ 297',
+    price: 'R$ 497',
     cadence: 'gestão de campanha',
     tagline: 'Anúncio que traz cliente, não só curtida.',
     description:
